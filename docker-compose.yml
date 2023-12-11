@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  connectasp.nettodockercontainer:
+    image: ${DOCKER_REGISTRY-}connectaspnettodockercontainer
+    build:
+      context: .
+      dockerfile: ConnectASP.NETtoDockerContainer/Dockerfile
+      
